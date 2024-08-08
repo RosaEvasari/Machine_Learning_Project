@@ -30,8 +30,9 @@ The data consists of information retrieved from the largest real estate website 
 ## Exploratory Data Analysis
 The figures below show the correlation between numerical columns and also correlation columns.
 
-(heatmap)
-(correlation_categorical)
+![Heatmap](/charts/correlation_heatmap_numerical.png)
+
+![correlation_numerical](/charts/correlation_categorical.png)
 
 ## Machine Learning models
 ### **1. Numerical columns**
@@ -42,7 +43,12 @@ Random Forest emerged as the best model with an R² of 0.51.
 ![R_square](/charts/R_squared_score_comparison_numerical.png)
 
 The table below provides comparison of mean squared error, root mean squared error, mean absolute error, and R-squared score of each model where we remove the outliers with Z-score and IQR, respectively.
-(screenshot table)
+
+- Z-score <br>
+![z-score](/charts/summary_numerical_z-score.png)
+
+- IQR <br>
+![IQR](/charts/summary_numerical_iqr.png)
 
 ### **2. Numerical and Categorical columns**
 
