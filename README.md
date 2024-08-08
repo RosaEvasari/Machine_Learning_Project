@@ -29,12 +29,18 @@ The data consists of information retrieved from the largest real estate website 
 ![R_square](/charts/R_squared_score_comparison_numerical.png)
 
 ### **2. Numerical and Categorical columns**
-#### 2.1. Without Feature Engineering
 
-#### 2.2. With Feature Engineering
+#### 2.1. With/Without Feature Engineering
+
+![4 model comparison](charts/Df_4model_comparison.png)
+
+#### 2.2 With PCA and IQR (outliers)
+
+![barplot](charts/Barplot_4model_comparison.png)
 
 #### 2.3. Apply PCA and Without Feature Engineering
 
+![final_comparison](charts/Df_4model_comparison_final.png)
 
 ## Key Findings and Insights
 - The best model for predicting the house's price with this dataset is ..
