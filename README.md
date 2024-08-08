@@ -24,31 +24,17 @@ The data consists of information retrieved from the largest real estate website 
 - garden : types of garden that the house has, for example, front yard, back yard, or side garden.
 - estimated_neighbourhood_price_per_m2 : estimated price/m2 of the neighbourhood of the house. 
 
-## Feature Engineering, Scaling, and Selection
-### **Feature Engineering** 
+## Machine Learning models
+### **1. Numerical columns**
 
-In this project, we use One Hot Encoding for all categorical columns consisting city, living_space_size_(m2), house_type, roof, toilet, bathroom, floors, energy_label, position, and garden. Furthermore, we apply Principal Component Analysis (PCA) method used to simplify a large data set into a smaller set while still maintaining significant patterns and trends.
 
-### **Feature Scaling** 
-We use normalization and standardization to adjust the range of features in a dataset. The aim is to ensure that all features are on a same scale. 
+### **2. Numerical and Categorical columns**
+#### 2.1. Without Feature Engineering
 
-### **Feature Selection** 
-In order to understand the correlation between numericals columns, we use a heat map as our correlation matrix. 
-(heatmap picture)
+#### 2.2. With Feature Engineering
 
-For the categorical columns, we use chi-square test and Cramer V value to identify the correlation of each column with the price category. 
-(summary of chi-square test and Cramer V)
+#### 2.3. Apply PCA and Without Feature Engineering
 
-## Hyperparameter Tuning and Model Optimization
-### **Models Training**
-
-The models that we use in this project are KNN, Random Forest, Adaptive Boosting, Gradient Boosting, and XGBoost. Based on the models' evaluation, it's proved that XGBoost and Gradient Boosting gives highest R2 values and lowest mean absolute error compared to the rest of the models. 
-(summary of MAE, MSE, R2 value of all models)
-
-### **Model Optimization**
-
-The models are optimized with hyperparameter tuning and Grid search.  
-(summary of MAE, MSE, R2 value of all models)
 
 ## Key Findings and Insights
 - The best model for predicting the house's price with this dataset is ..
