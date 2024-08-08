@@ -1,6 +1,9 @@
 # Dutch House Price Project
 
 ## Data
+Data source: [Data source] (https://www.kaggle.com/datasets/bryan2k19/dutch-house-prices-dataset) 
+
+The data consists of information retrieved from the largest real estate website in the Netherlands: [Funda](https://www.funda.nl/en/).
 
 ### Metadata
 
@@ -11,5 +14,5 @@
 ## Key Findings and Insights
 
 ## Additional links:
-- Kanban:
+- Kanban: [Kanban](https://trello.com/b/VaFoOuYu/kanban-machine-learning)
 - Presentation:
