@@ -27,7 +27,6 @@ The data consists of information retrieved from the largest real estate website 
 ## Machine Learning models
 ### **1. Numerical columns**
 
-[R_squared](R_squared_score_comparison_numerical.png)
 
 ### **2. Numerical and Categorical columns**
 #### 2.1. Without Feature Engineering
