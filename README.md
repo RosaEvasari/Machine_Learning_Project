@@ -29,17 +29,24 @@ The data consists of information retrieved from the largest real estate website 
 ![R_square](/charts/R_squared_score_comparison_numerical.png)
 
 ### **2. Numerical and Categorical columns**
-#### 2.1. Without Feature Engineering
 
-#### 2.2. With Feature Engineering
+#### 2.1. With/Without Feature Engineering
+
+![4 model comparison](charts/Df_4model_comparison.png)
+
+#### 2.2 With PCA and IQR (outliers)
+
+![barplot](charts/Barplot_4model_comparison.png)
 
 #### 2.3. Apply PCA and Without Feature Engineering
 
+![final_comparison](charts/Df_4model_comparison_final.png)
 
 ## Key Findings and Insights
-- The best model for predicting the house's price with this dataset is ..
-- The model has R-squared value of .. which indicates how well the model predicts future outcome.
-- The model has mean absolute error of .. indicating the difference between the prediction and the real value of the house's price.
+
+- The best model for predicting the house's price with this dataset is XGBoost with an R2 = 0,70 but it comes with a superior MAE when compared to the Gradient Boosting used on 2.1.
+- The model has R-squared value of 0,70 which indicates how well the model predicts future outcome.
+
 
 ## Additional links:
 - Kanban: [Kanban](https://trello.com/b/VaFoOuYu/kanban-machine-learning)
