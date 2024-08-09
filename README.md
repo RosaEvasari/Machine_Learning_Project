@@ -5,6 +5,10 @@
 This project focuses on predicting real estate prices in The Netherlands using machine learning techniques to support stakeholders such as real estate agents, buyers, and investors. The primary objective is to develop and optimize models that can accurately forecast property values by leveraging a diverse set of features, including both numerical and categorical data. <br> 
 Our approaches involve exploring various machine learning algorithms and evaluating their performance to determine the most effective model for price prediction. By providing reliable predictions, we aim to enable informed decision-making in the real estate market. This repository contains all relevant code, data, and documentation for replicating and understanding our predictive modeling process.
 
+### Machine Learning process diagram
+
+![Diagram](charts/ML_process_diagram.png)
+
 ## Data
 Data source: [Data source](https://www.kaggle.com/datasets/bryan2k19/dutch-house-prices-dataset) 
 
