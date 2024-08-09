@@ -34,6 +34,8 @@ The figures below show the correlation between numerical columns and also correl
 
 ![correlation_numerical](/charts/correlation_categorical.png)
 
+![RF](charts/RF_detect_categorical_variables.png)
+
 ## Machine Learning models
 ### **1. Numerical columns**
 In this approach, we focused solely on numerical variables and compared the impact of different outlier handling techniques, specifically Z-score and IQR.
