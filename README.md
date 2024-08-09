@@ -31,13 +31,13 @@ The data consists of information retrieved from the largest real estate website 
 The figures below show the correlation between numerical columns and also correlation columns.
 
 ![Heatmap](/charts/correlation_heatmap_numerical.png)
-- * Correlation Matrix to detect correlation between numerical variables.*
+- *Correlation Matrix to detect correlation between numerical variables.*
 
 ![correlation_numerical](/charts/correlation_categorical.png)
-- * Used Chi2 and Kamers to detect correlation between categorical variables. *
+- *Used Chi2 and Kamers to detect correlation between categorical variables.*
 
 ![RF](charts/RF_detect_categorical_variables.png)
-- * Another approach to detect correlation between categorical variables and the numerical target (price), using a random forest.*
+- *Another approach to detect correlation between categorical variables and the numerical target (price), using a random forest.*
 
 ## Machine Learning models
 ### **1. Numerical columns**
@@ -46,7 +46,7 @@ In this approach, we focused solely on numerical variables and compared the impa
 Random Forest emerged as the best model with an R² of 0.51.
 
 ![R_square](/charts/R_squared_score_comparison_numerical.png)
-- * Comparison of R2 Scores on different models.*
+- *Comparison of R2 Scores on different models.*
 
 The table below provides comparison of mean squared error, root mean squared error, mean absolute error, and R-squared score of each model where we remove the outliers with Z-score and IQR, respectively.
 
@@ -71,7 +71,7 @@ This approach focused on enhancing the predictive power by applying feature engi
 The Gradient Boosting model, after applying PCA, achieved an R² of 0.42.
 
 ![barplot](charts/Barplot_4model_comparison.png)
-- * Barplot showing the model performance with PCA.*
+- *Barplot showing the model performance with PCA.*
 
 #### 2.3. Apply PCA and Without Feature Engineering
 To enhance the predictive accuracy of our models, we apply Principal Component Analysis (PCA) to reduce dimensionality and improve model performance. Our approach focuses on using raw features without additional feature engineering. 
