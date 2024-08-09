@@ -5,6 +5,10 @@
 This project focuses on predicting real estate prices in The Netherlands using machine learning techniques to support stakeholders such as real estate agents, buyers, and investors. The primary objective is to develop and optimize models that can accurately forecast property values by leveraging a diverse set of features, including both numerical and categorical data. <br> 
 Our approaches involve exploring various machine learning algorithms and evaluating their performance to determine the most effective model for price prediction. By providing reliable predictions, we aim to enable informed decision-making in the real estate market. This repository contains all relevant code, data, and documentation for replicating and understanding our predictive modeling process.
 
+### Machine Learning process diagram
+
+![Diagram](charts/ML_process_diagram.png)
+
 ## Data
 Data source: [Data source](https://www.kaggle.com/datasets/bryan2k19/dutch-house-prices-dataset) 
 
@@ -30,8 +34,14 @@ The data consists of information retrieved from the largest real estate website 
 ## Exploratory Data Analysis
 The figures below show the correlation between numerical columns and also correlation columns.
 
-(heatmap)
-(correlation_categorical)
+![Heatmap](/charts/correlation_heatmap_numerical.png)
+- *Correlation Matrix to detect correlation between numerical variables.*
+
+![correlation_numerical](/charts/correlation_categorical.png)
+- *Used Chi2 and Kamers to detect correlation between categorical variables.*
+
+![RF](charts/RF_detect_categorical_variables.png)
+- *Another approach to detect correlation between categorical variables and the numerical target (price), using a random forest.*
 
 ## Machine Learning models
 ### **1. Numerical columns**
@@ -40,9 +50,15 @@ In this approach, we focused solely on numerical variables and compared the impa
 Random Forest emerged as the best model with an R² of 0.51.
 
 ![R_square](/charts/R_squared_score_comparison_numerical.png)
+- *Comparison of R2 Scores on different models.*
 
 The table below provides comparison of mean squared error, root mean squared error, mean absolute error, and R-squared score of each model where we remove the outliers with Z-score and IQR, respectively.
-(screenshot table)
+
+- Z-score <br>
+![z-score](/charts/summary_numerical_z-score.png)
+
+- IQR <br>
+![IQR](/charts/summary_numerical_iqr.png)
 
 ### **2. Numerical and Categorical columns**
 
@@ -59,6 +75,7 @@ This approach focused on enhancing the predictive power by applying feature engi
 The Gradient Boosting model, after applying PCA, achieved an R² of 0.42.
 
 ![barplot](charts/Barplot_4model_comparison.png)
+- *Barplot showing the model performance with PCA.*
 
 #### 2.3. Apply PCA and Without Feature Engineering
 To enhance the predictive accuracy of our models, we apply Principal Component Analysis (PCA) to reduce dimensionality and improve model performance. Our approach focuses on using raw features without additional feature engineering. 
